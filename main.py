@@ -14,6 +14,23 @@ def is_balanced(expression):
 
     return not check
 
+#Problem_2
+
+def remove_duplicates(sequence):
+    seen_Items = set()
+    duplicates = []
+    
+    for item in sequence:
+        if item not in seen_Items:
+            duplicates.append(item)
+            seen_Items.add(item)
+    
+    return duplicates
+
+
+
+
+
 
 
 
