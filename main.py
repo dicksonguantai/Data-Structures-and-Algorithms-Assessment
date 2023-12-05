@@ -27,7 +27,17 @@ def remove_duplicates(sequence):
     
     return duplicates
 
+#Problem_3
 
+import string
+from collections import Counter
+
+def word_frequency(sentence):
+    # To remove punctuation and convert to lowercase for comformity
+    sentence = sentence.translate(str.maketrans('', '', string.punctuation)).lower()
+    words = sentence.split()
+    word_counts = Counter(words)
+    return dict(word_counts)
 
 
 
